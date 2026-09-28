@@ -128,6 +128,7 @@ topology:
       startup-delay: 30
       binds:
         - sn/__clabNodeName__.txt:/mnt/flash/ceos-config:ro
+        - toggles/toggle_override:/mnt/flash/toggle_override
       startup-config: startup-configs/__clabLabName__/__clabNodeName__/startup-config
 
     A-LEAF8:
@@ -136,6 +137,7 @@ topology:
       startup-delay: 30
       binds:
         - sn/__clabNodeName__.txt:/mnt/flash/ceos-config:ro
+        - toggles/toggle_override:/mnt/flash/toggle_override
       startup-config: startup-configs/__clabLabName__/__clabNodeName__/startup-config
 
     #########################
@@ -362,6 +364,7 @@ topology:
       startup-delay: 120
       binds:
         - sn/__clabNodeName__.txt:/mnt/flash/ceos-config:ro
+        - toggles/toggle_override:/mnt/flash/toggle_override
       startup-config: startup-configs/__clabLabName__/__clabNodeName__/startup-config
 
     B-LEAF8:
@@ -370,6 +373,7 @@ topology:
       startup-delay: 120
       binds:
         - sn/__clabNodeName__.txt:/mnt/flash/ceos-config:ro
+        - toggles/toggle_override:/mnt/flash/toggle_override
       startup-config: startup-configs/__clabLabName__/__clabNodeName__/startup-config
 
     B-SW1:
