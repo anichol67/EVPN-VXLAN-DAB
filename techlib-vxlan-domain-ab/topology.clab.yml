@@ -16,7 +16,7 @@ topology:
   kinds:
     arista_ceos:
       enforce-startup-config: true
-      image: arista/ceos:latest
+      image: arista/ceos:4.37.1F-EFT2
       env:
         CLAB_MGMT_VRF: MGMT
         INTFTYPE: et
