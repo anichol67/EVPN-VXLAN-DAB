@@ -16,7 +16,7 @@ topology:
   kinds:
     arista_ceos:
       enforce-startup-config: true
-      image: arista/ceos:4.37.1F-EFT2
+      image: arista/ceos:4.37.1-EFT2
       env:
         CLAB_MGMT_VRF: MGMT
         INTFTYPE: et
@@ -166,10 +166,10 @@ topology:
         - assets/prod_hosts.txt:/home/admin/hosts.txt
       env:
         TMODE: lacp
-        IPV4: 10.30.30.101/24
+        IPV4: 10.10.11.101/24
         STATIC_ROUTE: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
-        GW: 10.30.30.1
-        IPV6: 2001:db8:30:30::101/64
+        GW: 10.10.11.1
+        IPV6: 2001:db8:10:11::101/64
         UPLINK_MAC: 00:01:01:00:00:A2
 
     HostA3:
@@ -206,10 +206,10 @@ topology:
       binds:
         - assets/prod_hosts.txt:/home/admin/hosts.txt
       env:
-        IPV4: 10.30.30.102/24
+        IPV4: 10.10.11.102/24
         STATIC_ROUTE: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
-        GW: 10.30.30.1
-        IPV6: 2001:db8:30:30::102/64
+        GW: 10.10.11.1
+        IPV6: 2001:db8:10:11::102/64
         UPLINK_MAC: 00:01:01:00:00:A5
 
     HostA6:
@@ -412,10 +412,10 @@ topology:
         - assets/prod_hosts.txt:/home/admin/hosts.txt
       env:
         TMODE: lacp
-        IPV4: 10.40.40.101/24
+        IPV4: 10.20.21.101/24
         STATIC_ROUTE: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
-        GW: 10.40.40.1
-        IPV6: 2001:db8:40:40::101/64
+        GW: 10.20.21.1
+        IPV6: 2001:db8:20:21::101/64
         UPLINK_MAC: 00:01:01:00:00:B2
 
     # HostB3 is connected to LEAF3 eth7
@@ -469,10 +469,10 @@ topology:
       binds:
         - assets/prod_hosts.txt:/home/admin/hosts.txt
       env:
-        IPV4: 10.40.40.102/24
+        IPV4: 10.20.21.102/24
         STATIC_ROUTE: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
-        GW: 10.40.40.1
-        IPV6: 2001:db8:40:40::102/64
+        GW: 10.20.21.1
+        IPV6: 2001:db8:20:21::102/64
         UPLINK_MAC: 00:01:01:00:00:B6
 
     # HostB7 is connected to B-SW1 eth4
